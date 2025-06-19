@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create box</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+    <button onclick="createBox()">create Box</button>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    function createBox(){
+        const newDiv=document.createElement('div');
+        newDiv.classList.add('box');
+        newDiv.textContent="New box ";
+        document.getElementById('container').appendChild(newDiv);
+    }
+</script>
